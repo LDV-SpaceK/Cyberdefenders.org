@@ -1,17 +1,18 @@
-# Q1: Understanding the geographical origin of the attack aids in geo-blocking measures and threat intelligence analysis. What city did the attack originate from?
-## Instructions:
-  Uncompress the lab (pass: cyberdefenders.org)
+# Instructions:
+  ## Uncompress the lab (pass: cyberdefenders.org)
 
-## Scenario:
+# Scenario:
 
-  An anomaly was discovered within our company's intranet as our Development team found an unusual file on one of our web servers. Suspecting potential malicious activity, the network team has prepared a pcap file with critical network traffic for analysis for the security team, and you have been tasked with analyzing the pcap.
+  ## An anomaly was discovered within our company's intranet as our Development team found an unusual file on one of our web servers. Suspecting potential malicious activity, the network team has prepared a pcap file with critical network traffic for analysis for the security team, and you have been tasked with analyzing the pcap.
 
-## Tools:
-  Wireshark
+# Tools:
+  ## Wireshark
+  
+## Q1: Understanding the geographical origin of the attack aids in geo-blocking measures and threat intelligence analysis. What city did the attack originate from?
 
 file: [Q1_File](LabFiles/c116-WebStrike.pcap)
 
-## Solve:
+### Solution:
 * Mở file pcap bằng Wireshark
 * Ở câu này, yêu cầu tìm địa chỉ thành phố của bên attack
 * Mình nhận thấy file đã capture được source ip là 117.11.88.124
@@ -21,3 +22,6 @@ file: [Q1_File](LabFiles/c116-WebStrike.pcap)
 ![image](Image/Q1.png)
 
 `Answer: Tianjin`
+
+## Q2: Knowing the attacker's user-agent assists in creating robust filtering rules. What's the attacker's user agent?
+## 
