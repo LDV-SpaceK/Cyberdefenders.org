@@ -40,3 +40,11 @@ file: [LabFile](LabFiles/c116-WebStrike.pcap)
 ![image](Image/Q3.png)
 
 `Answer: image.jpg.php`
+## Q4: Knowing the directory where files uploaded are stored is important for reinforcing defenses against unauthorized access. Which directory is used by the website to store the uploaded files?
+### Solution
+* Bước này mình đã sử dụng filter để thử tìm tên file upload
+* Tên filter: uploaded
+* Sau đó đối chiếu với answer format
+
+![image](Image/Q4.png)
+`Answer: /reviews/uploads/`
