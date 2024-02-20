@@ -33,7 +33,7 @@ file: [LabFile](LabFiles/c116-WebStrike.pcap)
 
 `Answer: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0`
 
-## Q2: We need to identify if there were potential vulnerabilities exploited. What's the name of the malicious web shell uploaded?
+## Q3: We need to identify if there were potential vulnerabilities exploited. What's the name of the malicious web shell uploaded?
 ### Solution
 * Yêu cầu là tìm file chứa mã độc thì mình đã tìm những packet HTTP có phương thức POST và tìm thấy file được upload
 * So sánh các file đó với answer format và mình đã tìm thấy file theo yêu cầu
