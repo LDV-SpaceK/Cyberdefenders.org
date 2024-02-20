@@ -12,4 +12,12 @@
 file: [Q1_File](LabFiles/c116-WebStrike.pcap)
 
 ## Solve:
+* Mở file pcap bằng Wireshark
+* Ở câu này, yêu cầu tìm địa chỉ thành phố của bên attack
+* Mình nhận thấy file đã capture được source ip là 117.11.88.124
+* Mình đã lên gg và search find place from ip address và tìm được một web
+* Nhập địa chỉ ip vào đó và đã tìm được address là thành phố Tianjin, China
 
+![image](Image/Q1.png)
+
+`Answer: Tianjin`
