@@ -1,16 +1,17 @@
 # Instructions:
-  ## Uncompress the lab (pass: cyberdefenders.org)
+  ### Uncompress the lab (pass: cyberdefenders.org)
 
 # Scenario:
 
-  ## An anomaly was discovered within our company's intranet as our Development team found an unusual file on one of our web servers. Suspecting potential malicious activity, the network team has prepared a pcap file with critical network traffic for analysis for the security team, and you have been tasked with analyzing the pcap.
+  ### An anomaly was discovered within our company's intranet as our Development team found an unusual file on one of our web servers. Suspecting potential malicious activity, the network team has prepared a pcap file with critical network traffic for analysis for the security team, and you have been tasked with analyzing the pcap.
 
 # Tools:
-  ## Wireshark
+  ### Wireshark
+
+# File:
+file: [LabFile](LabFiles/c116-WebStrike.pcap)
   
 ## Q1: Understanding the geographical origin of the attack aids in geo-blocking measures and threat intelligence analysis. What city did the attack originate from?
-
-file: [Q1_File](LabFiles/c116-WebStrike.pcap)
 
 ### Solution:
 * Mở file pcap bằng Wireshark
@@ -24,4 +25,9 @@ file: [Q1_File](LabFiles/c116-WebStrike.pcap)
 `Answer: Tianjin`
 
 ## Q2: Knowing the attacker's user-agent assists in creating robust filtering rules. What's the attacker's user agent?
-## 
+### Solution:
+* Xem gói có Protocol HTTP có phương thức GET cho phép chúng ta lấy được một số thông tin bên máy chủ gửi dữ liệu
+
+![image](Image/Q2.png)
+
+`Answer: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0`
