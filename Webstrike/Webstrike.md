@@ -9,4 +9,4 @@
 ## Tools:
   Wireshark
 
-file: [Q1_File](CTF-Learning/Webstrike/c116-WebStrike.pcap)
+file: [Q1_File](c116-WebStrike.pcap)
