@@ -16,8 +16,18 @@ File: [File](LabFile/poisoned_credentials.pcap)
 
 ## Q1: In the context of the incident described in the scenario, the attacker initiated their actions by taking advantage of benign network traffic from legitimate machines. Can you identify the specific mistyped query made by the machine with the IP address 192.168.232.162?
 ### Solution
-* Mình lướt tìm thì thấy packet Name query NB
+* Mình lướt tìm thì thấy packet Name query NB được gửi từ IP 192.168.232.162
 ![image](Image/Q1.png)
 `Answer: FILESHAARE`
 
-## Q2: 
+## Q2: We are investigating a network security incident. For a thorough investigation, we need to determine the IP address of the rogue machine. What is the IP address of the machine acting as the rogue entity?
+### Solution
+* 
+
+## Q5: As part of our investigation, we aim to understand the extent of the attacker's activities. What is the hostname of the machine that the attacker accessed via SMB?
+### Solution
+* Vì đề bài có nhắc đến SMB nên mình đã cho filter SMB nhưng không tìm thấy tên của máy bị tấn công
+* Lướt thấy có giao thức SMB2 nên mình đã filter SMB2 và tìm kiếm được Targer info
+* Trong Target info có NetBIOS Computer Name: ACCOUNTINGPC
+  ![image](Image/Q5.png)
+  `Answer: ACCOUNTINGPC`
