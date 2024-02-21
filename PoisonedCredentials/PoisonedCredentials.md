@@ -22,7 +22,9 @@ File: [File](LabFile/poisoned_credentials.pcap)
 
 ## Q2: We are investigating a network security incident. For a thorough investigation, we need to determine the IP address of the rogue machine. What is the IP address of the machine acting as the rogue entity?
 ### Solution
-* 
+* mình filter llmnr, tìm được response của ip 192.168.232.215
+![Q2](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/9a0d01da-8a69-4db2-b7b6-fc708cabd3a2)
+
 
 ## Q5: As part of our investigation, we aim to understand the extent of the attacker's activities. What is the hostname of the machine that the attacker accessed via SMB?
 ### Solution
