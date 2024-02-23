@@ -64,16 +64,22 @@
 * Câu hỏi có đề cập đến CVE nên mình đã search về CVE thì nó chính là viết tắt của Common Vulnerabilities and Exposures, ngắn gọn thì đây là một danh sách các lỗ hổng bảo mật
 * Mình đã dựa vào các đặc điểm của đoạn mã để search về loại CVE này
   **CVE reverse shell xml**
+  ![Q7](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/fcc80085-6cac-4891-b59a-ca1f1edc1aa0)
+
 * Mình đã tìm thấy github [link](https://github.com/rootsecdev/CVE-2023-46604 "Link Github") và [link](https://github.com/X1r0z/ActiveMQ-RCE "ActiveMQ-RCE")
 * Và mình đã tìm thấy lỗ hổng đó là **CVE-2023-46604** RCE reverse shell Apache ActiveMQ
 * Đây là một số link mình tìm thấy trên github giải thích về CVE này
+
   https://exp10it.io/2023/10/apache-activemq-版本-5.18.3-rce-分析
 
   https://attackerkb.com/topics/IHsgZDE3tS/cve-2023-46604/rapid7-analysis
+
 `Answer: CVE-2023-46604`
 
 ## Q8: What is the vulnerable Java method and class that allows an attacker to run arbitrary code? (Format: Class.Method)
 ### Solution 
 * Mình đã vào đọc các link ở trong github đó và tìm thấy thông tin class java được sử dụng
-  ![Q8](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/d516ff12-822c-47db-bb25-e65ef536b4b4)
-  `Answer: BaseDataStreamMarshaller.createThrowable`
+![Q8](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/fc5db21c-d302-44aa-9eee-1fea34f4a1bd)
+
+
+   `Answer: BaseDataStreamMarshaller.createThrowable`
