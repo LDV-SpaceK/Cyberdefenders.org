@@ -46,14 +46,39 @@
 
 ## Q4: After figuring out how the attacker moved within our network, we need to know what they did on the target machine. What's the name of the service executable the attacker set up on the target?
 ### Solution
-*Nhìn ở giao thức SMB2 thì còn một số packet gần đó có PSEXESVC.exe là dịch vụ dùng để thực thi từ xa
+* Nhìn ở giao thức SMB2 thì còn một số packet gần đó có PSEXESVC.exe là dịch vụ dùng để thực thi từ xa
 
 ![Screenshot 2024-03-01 135124](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/479a5072-143f-4bba-ad21-17e808804290)
 
 `Answer: psexsvc`
 
 ## Q5: We need to know how the attacker installed the service on the compromised machine to understand the attacker's lateral movement tactics. This can help identify other affected systems. Which network share was used by PsExec to install the service on the target machine?
+### Solution
+* Mình tìm thấy packet này Tree Connect Request Tree: \\10.0.0.133\ADMIN$, gói packet sau đó đã trả response
+* Mình thấy kể từ khi tạo file PSEXESVC.exe thì nó được gửi đi bằng cách share file qua địa chỉ IP 10.0.0.133\ADMIN$
+
+![Screenshot 2024-03-01 142343](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/ba6f5745-e966-49b6-8d96-50f03e62ca6b)
 
 
+*  gói tin này đang thực hiện một yêu cầu ghi đến tài nguyên chia sẻ ADMIN$ trên máy có địa chỉ IP là 10.0.0.133, có thể liên quan đến việc truy cập hoặc thao tác với tệp tin PSEXESVC.exe.
+
+`Answer: ADMIN$`
+
+## Q6: We must identify the network share used to communicate between the two machines. Which network share did PsExec use for communication?
+* Mình thấy trước khi kết nối với 10.0.0.133\ADMIN$ thì đã kết nối với 10.0.0.133\IPC$
+
+![Screenshot 2024-03-01 143229](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/5af6a181-e890-4fd6-b1de-df1b0ae5950f)
+
+`Answer: IPC$`
+
+## Q7: Now that we have a clearer picture of the attacker's activities on the compromised machine, it's important to identify any further lateral movement. What is the machine's hostname to which the attacker attempted to pivot within our network?
+### Solution
+* MÌnh tiếp tục tìm số lượng packet giao tiếp giữa các địa chỉ ip và đúng thứ hai là 130 và 131
+* Gắn filter source và destination ip là 2 địa chỉ 130 và 131 và mình tìm thấy
+![Screenshot 2024-03-01 145320](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/5746b4d4-8a3d-42ca-89a6-f9948800114d)
+
+![Screenshot 2024-03-01 150600](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/3f634844-c365-4a83-bddf-ba986e3ace21)
+
+`Answer: MARKETING-PC`
 
 
