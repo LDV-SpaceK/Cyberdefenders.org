@@ -24,4 +24,9 @@
 * Đầu tiên mình cũng chưa biết làm sao để mở file này nên mình đã mở bằng WinZip
 * mở file vhd
 * export nó ra thành một thư mục
-* dùng ftk imager mở
+* dùng ftk imager mở, tìm trong các user xem có gì không
+* Tại Download của user administrator có telegram và trong thư mục đó có một file rar lạ
+
+![Screenshot 2024-03-02 195620](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/6e86414e-faf9-4c99-9185-f1d624fae598)
+
+`Answer: Telegram`
