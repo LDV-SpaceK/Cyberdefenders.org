@@ -1,5 +1,5 @@
 ## What is Elliot’s way of hiding his secret data?
-### File: [File](file)
+### File: [File](elliot_secrets.bin)
 
 * Cảm nhận đầu tiên khi mình đọc challenge này là không có một chút thông tin hay hint gì :))
 * Sau khi tải file về thì mình có exiftool thì đây là file elf, mình chạy thử file
