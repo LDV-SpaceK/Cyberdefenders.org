@@ -108,7 +108,18 @@ https://owasp.org/www-community/attacks/Windows_alternate_data_stream
 `Answer: yes.txt`
 
 ## Q6: What is the full path of the browser cache created when the user visited "www.13cubed.com" ?
+* Mình sử dụng symlink của vol3 nhưng không tìm được bất kì thứ gì, vậy nên mình đã phải tìm cách cài vol2 và sử dụng mftparser vì ở vol2 thông tin được hiển thị đầy đủ hơn
+* sau khi tải được tool vol2 thì mọi thứ trở nên clear hơn rất nhiều
 
+`vol.py -f memdump.mem --profile=Win10x64_17134 mftparser | grep 13cubed`
+
+![Screenshot 2024-03-16 231518](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/8a7aab6c-991f-4186-9a1e-f3617c112439)
+
+`Answer: C:\Users\CTF\AppData\Local\Packages\MICROS~1.MIC\AC\#!001\MICROS~1\Cache\AHF2COV9\13cubed[1].htm`
+
+
+
+ 
 
 
 
