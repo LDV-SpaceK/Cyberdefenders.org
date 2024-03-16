@@ -82,7 +82,32 @@ https://www.youtube.com/watch?v=Uk3DEgY5Ue8
 
 * trong discord những người đã hoàn thành lab recommend sử dụng regripper
 
+`sudo apt install regripper`
 
+* sau khi dump các hive ra file bằng lệnh `python .\volatility3\vol.py -f memdump.mem windows.registry.hivelist.HiveList --dump`, mình đã sử dụng regripper trên linux để xem network info tại file dump của \SystemRoot\System32\Config\SOFTWARE là registry.SOFTWARE.0xd38985eb3000.hive và tìm được DefaultGatewayMac
+
+`regripper -r registry.SOFTWARE.0xd38985eb3000.hive -p networklist`
+
+![Screenshot 2024-03-16 141848](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/1dde3031-8439-44e7-b987-6d80351dea08)
+
+`Answer: 00:50:56:FE:D8:07`
+
+## Q5: What is the name of the file that is hidden in the alternative data stream?
+* Mình search alternative data stream
+https://owasp.org/www-community/attacks/Windows_alternate_data_stream
+
+![Screenshot 2024-03-16 144818](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/fe506970-d0e5-445c-8a20-89a51dabd2d5)
+
+* Một "alternative data stream" (ADS) là một cơ chế trong hệ thống tệp NTFS của Windows, cho phép bạn gắn kết dữ liệu với một tệp nhất định mà không làm thay đổi kích thước hoặc thông tin về tệp chính
+* đây cũng là một lỗ hổng bảo mật khi mà kẻ tấn công có thể che giấu malware bằng ads vì ads không thể xem bằng các trình xem file thông thường như window explorer
+* vì ads có dạng :$DATA nên mình đã strings file memdump.mem và grep ":" và "txt" như answer format
+* Mình đã tìm thấy đó là file yes.txt là ads của test.txt
+
+![Screenshot 2024-03-16 151304](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/9b539f72-4f61-4e86-90ca-1a6e7037e03c)
+
+`Answer: yes.txt`
+
+## Q6: What is the full path of the browser cache created when the user visited "www.13cubed.com" ?
 
 
 
