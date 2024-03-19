@@ -1,4 +1,4 @@
-![ảnh](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/f816c584-9959-4acc-8bfd-27b65777a17a)## Challenge Description
+## Challenge Description
 
 ### When you deal with an attacker, don’t always trust what you see
 
@@ -53,6 +53,8 @@
 * Tổng hợp 2 flag thì chúng ta được:
 
 `Answer: flag{Don0t_alw4ys_TRust_SYS_Prce33_4t4LL}`
+
+## Toi da luyen duoc doi mat dai bang khi doc dong hexdump =))))))
 
 
 
