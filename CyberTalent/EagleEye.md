@@ -44,7 +44,7 @@
 
 `vol.py -f chall.raw --profile=Win7SP1x86_23418 mftparser | grep -C 30 flag1`
 
-* mình thử tiếp từ khóa part và tìm được đoạn flag đầu
+* mình thử tiếp từ khóa part và may mắn tìm được đoạn flag đầu
 
 `vol.py -f chall.raw --profile=Win7SP1x86_23418 mftparser | grep -C 30 part`
 
