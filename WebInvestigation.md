@@ -1,4 +1,4 @@
-![ảnh](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/fd675ced-9e1e-4c13-9821-95b06bb7eff0)## Instructions:
+## Instructions:
 
    ### Uncompress the lab (pass: cyberdefenders.org)
 
