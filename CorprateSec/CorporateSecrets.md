@@ -1,4 +1,4 @@
-![ảnh](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/a319c80d-af38-4881-b525-2bed80c64edf)## Instructions:
+![ảnh](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/f560ab5e-01be-4ef8-90b1-f25604238b9e)![Screenshot 2024-04-10 201458](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/da261847-ebd9-4344-ba78-5be8092ea13e)![ảnh](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/a319c80d-af38-4881-b525-2bed80c64edf)## Instructions:
 
 * Uncompress the lab (pass: cyberdefenders.org)
 
@@ -146,10 +146,39 @@
 
 `VSCO`
 
+### Q9: What is the name of the device?
+* Mình search được là tên của máy tính được lưu ở Control\ComputerName
 
+![Screenshot 2024-04-10 201458](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/4a634dae-0ef9-4bc7-8ee2-d96d15641c25)
 
+* Tại folder ComputerName mình tìm thấy tên của máy tính là DESKTOP-3A4NLVQ
 
+![Screenshot 2024-04-10 201517](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/1bfec8a0-0d52-4609-9bd6-951b4717b7ac)
 
+`DESKTOP-3A4NLVQ`
+
+### Q10: What is the SID of the machine?
+* Mình search được trên wiki thì SID của machine là S-1-5-21
+ 
+![ảnh](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/43467e4a-b1c8-40f7-a55b-6948808f3316)
+
+* Đối chiếu lại với sid của user thì mình tìm được
+![Screenshot 2024-04-10 222001](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/01d403d4-cefb-44a6-ad95-d19cd497ff6a)
+
+`S-1-5-21-2446097003-76624807-2828106174`
+
+### Q11: How many web browsers are present?
+* Mình tìm trong AppData của các user thì mình tìm thấy 5 loại trình duyệt là Tor, Chrome, Firefox, Edge và Internet explorer đã được cài đặt từ đầu
+
+![Screenshot 2024-04-10 224214](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/1b3fa68e-793c-461b-b7a3-26ce1eda8c8a)
+![Screenshot 2024-04-10 224206](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/baeb2e44-25b4-44cc-aef1-26ef0d39d5e8)
+![Screenshot 2024-04-10 224156](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/17825a72-c3c9-4934-a49c-8eb3cda3ce49)
+![Screenshot 2024-04-10 224147](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/b443ae0c-12c9-4d64-839f-c86e4c26cd19)
+![Screenshot 2024-04-10 224131](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/d83c812a-c7a5-4f1b-9f5d-5565f3fdc81f)
+
+`5`
+
+### Q12: How many super secret CEO plans does Tim have? (Dr. Doofenshmirtz Type Beat)
 
 
 
