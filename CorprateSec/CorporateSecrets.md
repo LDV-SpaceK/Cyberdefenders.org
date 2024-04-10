@@ -121,6 +121,34 @@
 
 `hansel.apricot`
 
+### Q7: What type of file is "vegetable"? Provide the extension without a dot.
+* trong Pictures của user miriam.grapes có file vegetable không có extension, xem hex của nó thì là file 7z
+
+![Screenshot 2024-04-10 065428](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/6bd89acf-ffe2-42a1-907d-6ba2a0fa863e)
+
+`7z`
+
+### Q8: What type of girls does Miriam Grapes design phones for (Target audience)?
+* đầu tiên mình export file thisIsMyDesign.jpg thì thấy có vẻ đây là một thiết kế bảng mạch gì đấy
+
+![thisIsMyDesign](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/f93cdd57-38e1-4091-b0a5-e9aefaa5a9fa)
+
+* tuy nhiên điều này không nói lên điều gì cả nên mình đã xem còn chi tiết nào không
+* mình thấy rằng user này sử dụng firefox nên mình đã thử xem lịch sử duyệt web cũng như có thể có một cuộc trò chuyện gì đấy liên quan đến mục tiêu
+
+![Screenshot 2024-04-10 071156](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/f06f32fe-9650-4ef9-b948-24c7bd4d77a9)
+
+* mình đã export places.sqlite để xem và tìm thấy lịch sử duyệt web của user này
+
+![Screenshot 2024-04-10 070531](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/cf1ffc97-e03c-42e1-ad2d-69c884f7c131)
+
+* what kind of phones do vsco girls enjoy - Google Search, có vẻ như đối tượng ở đây là vsco girl
+
+`VSCO`
+
+
+
+
 
 
 
