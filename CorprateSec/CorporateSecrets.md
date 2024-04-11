@@ -1,4 +1,4 @@
-![ảnh](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/bc85a9c4-149c-4be3-811b-dc9c99766ae6)## Instructions:
+## Instructions:
 
 * Uncompress the lab (pass: cyberdefenders.org)
 
@@ -290,7 +290,58 @@
 `537fe19a560ba3578d2f9095dc2f591489ff2cde`
 
 ### Q25: When was the last time a docx file was opened on the device? (An apple a day keeps the docx away. Answer in UTC, YYYY-MM-DD HH:MM:SS)
+* search `what is hive of last opened doc files forensics`
+
+![ảnh](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/bc85a9c4-149c-4be3-811b-dc9c99766ae6)
+
+* mình tìm được recent doc
+
+![ảnh](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/56cb8fc9-fb1b-4bcc-9dd7-ebadaa2cee77)
+
+`2020-04-11 23:23:36`
+
+### Q26: How many entries does the MFT of the filesystem have?
+* mình sử dụng mftdump.exe để xem các entry của file hệ thống
+
+![ảnh](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/e0eac4ae-51b2-4cd5-80c1-4fa96e54ed60)
+
+* vì record bắt đầu từ 0 nên tổng số record sẽ là 219904
+
+`219904`
+
+### Q27: Tim wanted to fire an employee because they were ......?(Be careful what you wish for)
+* mình nghĩ phải xem lịch sử web của Tim một lần nữa, lần trước là firefox, lần này có thể là chrome hoặc edge, mình đã thử file History của Chrome và tìm thấy lịch sử duyệt web khá đáng ngờ
+
+![ảnh](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/4409d806-a6c3-407e-b08f-fc6c38765455)
+
+* có vẻ vì nhân viên này quá bốc mùi nên Tim muốn sa thải
+
+`stinky`
+
+### Q28: What cloud service was a Startup item for the user admin?
+* mình search autostart registry
+
+![ảnh](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/df5730f8-b272-4866-a266-09b75713251c)
+
+* xem file Run thì thấy data duy nhất là OneDrive
+
+![ảnh](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/a89cae86-2acf-4694-8121-f29999211f8f)
+
+`OneDrive`
+
+### Q29: Which Firefox prefetch file has the most runtimes? (Flag format is <filename/#oftimesrun>)
 *
+
+
+
+
+
+
+
+
+
+
+
 
 
 
