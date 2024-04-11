@@ -1,4 +1,4 @@
-![ảnh](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/f560ab5e-01be-4ef8-90b1-f25604238b9e)![Screenshot 2024-04-10 201458](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/da261847-ebd9-4344-ba78-5be8092ea13e)![ảnh](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/a319c80d-af38-4881-b525-2bed80c64edf)## Instructions:
+## Instructions:
 
 * Uncompress the lab (pass: cyberdefenders.org)
 
@@ -179,6 +179,76 @@
 `5`
 
 ### Q12: How many super secret CEO plans does Tim have? (Dr. Doofenshmirtz Type Beat)
+* Mình tìm trong user tim thì thấy có file secret.odt sau khi mở lên thì có 3 kế hoạch
+
+![Screenshot 2024-04-11 184342](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/a7392e4c-50bd-4398-bfbc-4b79f79809e7)
+
+* Tuy nhiên, submit đáp án bị sai, nên mình đã thử bôi đen hết các kí tự trong trang xem có kí tự nào bị ẩn không, thì ở dòng dưới kế hoạch thứ 3 mình thấy có khoảng trống bị bôi đen, mình đổi màu chữ và được thêm 1 plan
+
+![Screenshot 2024-04-11 184359](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/455a4b48-f2bd-45cf-8301-eee2a2acc1b3)
+
+`4`
+
+### Q13: Which employee does Tim plan to fire? (He's Dead, Tim. Enter the full name - two words - space separated)
+* Trong file secret.odt có nhắc đến sa thải Jim Tomato
+
+![Screenshot 2024-04-11 184359](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/eee4d38f-8754-44c1-a8eb-39af39290bb7)
+
+`Jim Tomato`
+
+### Q14: What was the last used username? (I didn't start this conversation, but I'm ending it!)
+* Mình phải tìm một user khác ngoài những user trên, Windows NT\Winlogon là nơi quản lí những tác vụ khi đăng nhập của user, trong đó có lưu các user đã từng đăng nhập và user cuối cùng đăng nhập
+
+![Screenshot 2024-04-11 185041](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/807761c0-58e6-4318-a55f-255662bad721)
+
+`jim.tomato`
+
+### Q15: What was the role of the employee Tim was flirting with?
+* Mình xem lịch sử trình duyệt firefox của Tim thì thấy Tim search: `is it ok to flirt with my secretary`
+
+![Screenshot 2024-04-11 190250](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/ad974a01-0f5f-4ef5-b74c-29d2e549bad1)
+
+`secretary`
+
+### Q16: What is the SID of the user "suzy.strawberry"?
+* mình tìm thấy trong ProfileList thì sid của suzy là 1004
+
+![ảnh](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/c73e4282-2dd7-4046-a84a-e74529b0ae11)
+
+`1004`
+
+### Q17: List the file path for the install location of the Tor Browser.
+* check trong folder Program1 có folder TorBrowser
+
+![ảnh](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/69d81edb-17f5-4ea0-bd7a-a22c0797ea8e)
+
+* Mà root chứa folder Windows và thường thì Windows được đặt trong ổ C
+
+`C:\Program1`
+
+### Q18: What was the URL for the Youtube video watched by Jim?
+* hướng đi là tìm link youtube nên mình nghĩ là phải tìm một file sqlite để xem lịch sử tìm kiếm của Jim
+* Mình tìm thấy một file HISTORY, xem hex thì đúng là file sqlite
+
+![ảnh](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/9a55449d-53ec-419e-b4bb-db7f24d099de)
+
+* Mở file sqlite và mình thấy link youtube với nội dung là `How To Hack Into a Computer`
+
+![Screenshot 2024-04-11 193002](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/699418fd-63eb-4433-b7c4-523191ff5c1c)
+
+`https://www.youtube.com/watch?v=Y-CsIqTFEyY`
+
+### Q19: Which user installed LibreCAD on the system?
+
+
+
+
+
+
+
+
+
+
 
 
 
