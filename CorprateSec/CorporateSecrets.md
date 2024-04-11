@@ -1,4 +1,4 @@
-## Instructions:
+![ảnh](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/bc85a9c4-149c-4be3-811b-dc9c99766ae6)## Instructions:
 
 * Uncompress the lab (pass: cyberdefenders.org)
 
@@ -228,7 +228,7 @@
 
 ### Q18: What was the URL for the Youtube video watched by Jim?
 * hướng đi là tìm link youtube nên mình nghĩ là phải tìm một file sqlite để xem lịch sử tìm kiếm của Jim
-* Mình tìm thấy một file HISTORY, xem hex thì đúng là file sqlite
+* Mình tìm thấy một file History, xem hex thì đúng là file sqlite
 
 ![ảnh](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/9a55449d-53ec-419e-b4bb-db7f24d099de)
 
@@ -239,14 +239,58 @@
 `https://www.youtube.com/watch?v=Y-CsIqTFEyY`
 
 ### Q19: Which user installed LibreCAD on the system?
+* Mình tìm thấy trong folder Download của miriam
+
+![ảnh](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/7cdfd5e6-2554-427a-b8bb-1408996d723c)
+
+`miriam.grapes`
+
+### Q20: How many times "admin" logged into the system?
+* file SAM chứa dữ liệu người dùng nên mình đã xem và tìm thấy số lần đăng nhập của admin
+
+![Screenshot 2024-04-11 203718](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/9b7fd343-0825-42a6-bf42-3609f6ae1cb1)
+
+`10`
+
+### Q21: What is the name of the DHCP domain the device was connected to?
+* DHCP là viết tắt của "Dynamic Host Configuration Protocol" (Giao thức Cấu hình Máy Chủ Động). Đây là một giao thức mạng được sử dụng để tự động cấu hình các thiết bị mạng với các thông tin cần thiết để kết nối và hoạt động trên mạng
+* thì mình check NetworkList trong Windows NT thì tìm thấy địa chỉ ip và domain của thiết bị
+
+![Screenshot 2024-04-11 204248](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/0fece3d3-f1ea-4318-adad-4c54c677535e)
+
+`fruitinc.xyz`
+
+### Q22: What time did Tim download his background image? (Oh Boy 3AM . Answer in MM/DD/YYYY HH:MM format (UTC).)
+* Mình tìm trong folder Pictures của Tim thì thấy một bức ảnh hqdefault.jpg
+
+![ảnh](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/a6bbdf77-2750-4f3d-9d64-f52d14497d38)
+
+`04/05/2020 03:49`
+
+### Q23: How many times did Jim launch the Tor Browser?
+* search `evidence of program execution`
+
+![ảnh](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/555b1c7b-b9f6-4790-8d73-e92195b206b6)
+
+* mình tìm thấy đường dẫn C:\Program1\Browser\firefox.exe và nhớ đến là Tor đã được cài đặt ở Program1 này
+
+![ảnh](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/d722ad3c-bbb3-4fbc-b3ed-91d8d8c31db3)
+
+`2`
+
+### Q24: There is a png photo of an iPhone in Grapes's files. Find it and provide the SHA-1 hash.
+* mình tìm thấy bức ảnh samplePhone.jpg của user Grapes, export và mở lên xem thì đó là một chiếc điện thoại gập, mình đã thử sha1sum rồi submit nhưng bị sai
+* và đọc kĩ lại đề thì đây phải là ảnh của một chiếc Iphone nên mình đã dùng và foremost để lấy ra bức ảnh bị ẩn giấu trong samplePhone.jpg
+
+![00000011](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/241c58de-1c95-4f04-b565-76b13edd16db)
 
 
+![Screenshot 2024-04-11 215929](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/4fdcef7d-22de-4023-829a-497d4b47b5e6)
 
+`537fe19a560ba3578d2f9095dc2f591489ff2cde`
 
-
-
-
-
+### Q25: When was the last time a docx file was opened on the device? (An apple a day keeps the docx away. Answer in UTC, YYYY-MM-DD HH:MM:SS)
+*
 
 
 
