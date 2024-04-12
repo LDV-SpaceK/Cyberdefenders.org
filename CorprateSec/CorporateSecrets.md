@@ -359,9 +359,23 @@
 `admin`
 
 ### Q32: What was the last run date of the executable with an MFT record number of 164885? (Format: MM/DD/YYYY HH:MM:SS (UTC).)
+* Đầu tiên mình xem lại mftdump của file $MFT và xem bản record 164885
 
+![Screenshot 2024-04-12 231419](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/34fd8a65-bafb-49d6-a505-28ac80d13063)
 
+* thì record này có địa chỉ offset là 0x0a105400 nên mình đã thử xxd và grep
 
+![Screenshot 2024-04-12 231429](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/da249f3b-8599-4ef3-a9dd-768521f9d808)
+
+* đây là file 7zG.exe mà mình xem thử prefetch của nó và tìm thấy last run
+
+![Screenshot 2024-04-12 231639](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/03211c3b-62a5-4b5e-b43b-35c11da6272f)
+
+![Screenshot 2024-04-12 231903](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/dbcfb9f7-a0cc-4d68-b9b1-5ef4f61c7ee4)
+
+`04/12/2020 02:32:09`
+
+### Q33: What is the log file sequence number for the file "fruit_Assortment.jpg"?
 
 
 
