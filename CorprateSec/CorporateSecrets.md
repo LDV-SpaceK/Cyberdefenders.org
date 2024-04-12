@@ -330,13 +330,35 @@
 `OneDrive`
 
 ### Q29: Which Firefox prefetch file has the most runtimes? (Flag format is <filename/#oftimesrun>)
-*
+* Mình sử dụng PECmd.exe để xem file prefetch mà mình đã export bằng FTK Imager(Windows\Prefetch), vì bài này liên quan đến Firefox nên mình đã input các file đầu vào là các file pf của Firefox
 
+![ảnh](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/e8adc859-486a-44bd-840b-33b3b2c337c7)
 
+* Mình thấy có mục run count nên mình đã grep cho gọn
 
+![ảnh](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/432b5575-5b7e-42ea-8f41-f2c30606dd47)
 
+`FIREFOX.EXE-A606B53C.pf/21`
 
+### Q30: What was the last IP address the machine was connected to?
+* mình sử dụng regripper trên linux `regripper -r SYSTEM -p ips`
 
+![ảnh](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/16cf870d-524f-43d8-87f3-56f12388b525)
+
+`192.168.2.242`
+
+### Q31: Which user had the most items pinned to their taskbar?
+* Mình search `where does windows store pinned items`
+
+![ảnh](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/5d3e66fc-673c-4c44-8b48-d5d8d7909567)
+
+* user admin có 2 là Firefox và File Explorer còn các user còn lại chỉ có một
+
+![ảnh](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/78e7055f-d82c-4848-a6c1-7945d1312d06)
+
+`admin`
+
+### Q32: What was the last run date of the executable with an MFT record number of 164885? (Format: MM/DD/YYYY HH:MM:SS (UTC).)
 
 
 
