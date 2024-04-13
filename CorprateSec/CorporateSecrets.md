@@ -1,4 +1,4 @@
-## Instructions:
+![ảnh](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/28a06044-68c9-4d3b-a737-b57fb9cc3579)## Instructions:
 
 * Uncompress the lab (pass: cyberdefenders.org)
 
@@ -376,8 +376,70 @@
 `04/12/2020 02:32:09`
 
 ### Q33: What is the log file sequence number for the file "fruit_Assortment.jpg"?
+* search `where the logfile sequence  located`
+* và logfile sequence có được lưu ở trong file $MFT của hệ thống
 
+https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://dfir.ru/2019/02/16/how-the-logfile-works/&ved=2ahUKEwji-vOc7L6FAxWdslYBHTsgBHwQFnoECBIQAQ&usg=AOvVaw1Rnm47Qk2U6W4GfvTBVNjk
+ 
+![ảnh](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/5c9e2e15-4736-4248-ac5c-5f49bbe034d2)
 
+* mình sử dụng MFTECmd.exe để parse file mft
+
+![Screenshot 2024-04-12 231903](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/76ed8dbe-9840-4142-8bdb-b9cc6bafc45e)
+
+* mình tìm fruit_Assortment.jpg trong file thì thấy logfile sequence number
+
+![ảnh](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/a19c31a3-3f6c-4cd1-82dc-3057296b6299)
+
+`1276820064`
+
+### Q34: Jim has some dirt on the company stored in a docx file. Find it, the flag is the fourth secret, in the format of <"The flag is a sentence you put in quotes">. (Secrets, secrets are no fun)
+* mình tìm thấy file Document1.docx mình mở thử thì có dòng chữ
+
+![Screenshot 2024-04-13 162549](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/08927b41-82d5-4d07-90a4-72c5b6803eea)
+
+* mình thử exiftool thì có vẻ file này có chứa vài file zip ẩn bên trong
+
+![ảnh](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/b0b4dc70-2f7e-48ce-bd3b-ccfbdb1fa367)
+
+* mình thử binwalk thì đúng là có rất nhiều file zip bên trong
+
+![ảnh](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/9f8116e7-15d6-4c6d-922f-05e4c3360fe8)
+
+* mình extract hết ra thì có file file.xml, mình thử exiftool file đó thì thấy đó là file docx, nên mình đã đổi extension thành docx và mở lên
+
+![Screenshot 2024-04-13 163340](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/5fc7d67a-122b-4ec7-9714-649bcd8bf183)
+
+`Customer data is not stored securely`
+
+### Q35: In the company Slack, what is threatened to be deactivated if the user gets their email deactivated?
+* Slack là một ứng dụng chat
+* mình tìm các user xem ai có Slack, thì tìm thấy hansel.apricot có folder Slack
+
+![ảnh](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/a85189ab-538d-4a26-9478-4f718224d1be)
+
+* bên trong có khá nhiều dữ liệu nên mình export folder Slack ra để tìm kiếm thông tin
+* mình sử dụng find để tìm thông tin `find -type f -exec grep "email" {} +`
+
+![ảnh](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/2d112ec6-951f-4f35-b346-f9c121b80d1a)
+
+* mình tìm thấy file một file log có chứa từ khóa email
+* thử đọc thông tin file đó
+
+![ảnh](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/7cdd9bb9-e7df-4385-967b-fdac25a7c6fb)
+
+* có những đoạn text"(thông tin)" có vẻ là tin nhắn của thành viên trong nhóm Slack này, nên mình thử grep text để xem tất cả các tin nhắn
+
+![ảnh](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/cae2b170-a30f-49de-ae66-7d28e89f0113)
+
+* tuy nhiên đoạn chat này có vẻ đáng ngờ
+
+![ảnh](https://github.com/LDV-SpaceK/CTF-Learning/assets/151914246/0359a3a4-bf9c-4f71-aa52-70c037dad3fc)
+
+* câu trả lời là đừng lo, email của bạn hoàn toàn vẫn đang hoạt động, nên mình nghĩ câu trên là câu hỏi gì đấy liên quan đến email của người dùng
+* thử với answer format thì là kneecaps
+
+`kneecaps`
 
 
 
