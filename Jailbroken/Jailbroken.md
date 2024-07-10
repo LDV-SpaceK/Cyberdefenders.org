@@ -118,6 +118,112 @@
 
 ![ảnh](https://github.com/LDV-SpaceK/Cyberdefenders.org/assets/151914246/16e92f2d-060b-4818-b6e8-8cd8023d42ac)
 
+* `private\var\containers\Bundle\Application\` store all applications was installed
+* 3 applications was installed
+* first app install was Phoenix, but it isn't from appstore
+* the first appstore installed app is `Cookie Run: OvenBreak`
+
+![ảnh](https://github.com/LDV-SpaceK/Cyberdefenders.org/assets/151914246/90a4669c-46bf-4fd6-8872-ab97fc46d797)
+
+`Cookie Run`
+
+### Q10
+
+![ảnh](https://github.com/LDV-SpaceK/Cyberdefenders.org/assets/151914246/1078dd48-3ece-40fb-be14-dcf5fb215380)
+
+* in all installed app, there was an app `Phoenix`
+
+* Some document show that app to jailbreak ios 9.3.5 - 9.3.6 is Phoenix Jailbreak
+
+`Phoenix`
+
+### Q11
+
+![ảnh](https://github.com/LDV-SpaceK/Cyberdefenders.org/assets/151914246/03dd4b88-6698-4214-b06f-f7532a94869a)
+
+* there was 2 apps from appstore
+* `Cookie Run` and `Pokémon Quest`
+
+![ảnh](https://github.com/LDV-SpaceK/Cyberdefenders.org/assets/151914246/7fe410bc-c744-47fd-ad36-aab00da4f2bb)
+
+![ảnh](https://github.com/LDV-SpaceK/Cyberdefenders.org/assets/151914246/f64d53cd-eb76-45ec-b284-339e0dbc06a5)
+
+`2`
+
+### Q12
+
+![ảnh](https://github.com/LDV-SpaceK/Cyberdefenders.org/assets/151914246/c6cae00f-0100-4e65-b42a-e479e94eabed)
+
+* `\private\var\mobile\Documents\Save States\`
+* the most recently game was obtained is `Legend of Zelda, The - The Minish Cap`
+* it has only 1 save state
+
+![ảnh](https://github.com/LDV-SpaceK/Cyberdefenders.org/assets/151914246/3a8e6df3-9f65-4b8e-b1fe-f1a30d1a427b)
+
+`1`
+
+### Q13
+
+![ảnh](https://github.com/LDV-SpaceK/Cyberdefenders.org/assets/151914246/4b666cb5-a2eb-4d4f-8784-d5652beb4457)
+
+* in Q5, when I found 2 podcasts, one of them is podcast of `Duolingo` with many tracks
+
+![ảnh](https://github.com/LDV-SpaceK/Cyberdefenders.org/assets/151914246/75c622b1-7a05-4452-9649-5b57e804f770)
+
+* after identifing, this is Spanish
+
+`Spanish`
+
+### Q14
+
+![ảnh](https://github.com/LDV-SpaceK/Cyberdefenders.org/assets/151914246/f9480c57-502d-492a-8b12-d57dc7163576)
+
+* User use Ipad to record the page of book he reading in real life, so it might be the camera
+* the video was stored in `\private\var\mobile\Media\DCIM\100APPLE\`
+* `IMG_0008.MOV`
+
+![ảnh](https://github.com/LDV-SpaceK/Cyberdefenders.org/assets/151914246/38f4907c-5762-4195-a4eb-fad20fe73e5b)
+
+`85`
+
+### Q15
+
+![ảnh](https://github.com/LDV-SpaceK/Cyberdefenders.org/assets/151914246/7f6b721c-388d-43ec-830e-e53d337ebd19)
+
+* check the NoteStore.sqlite
+
+`strings .\private\var\mobile\Containers\Shared\AppGroup\4466A521-8AF9-4E09-800B-C3203BB70E0E\NoteStore.sqlite | findstr /I 'should buy'`
+
+![ảnh](https://github.com/LDV-SpaceK/Cyberdefenders.org/assets/151914246/cd2f72a7-beb4-4f8d-af57-ab841b690840)
+
+`Racing for the PS4.Did you find me? Then you should Buy Crash Bandicoot Nitro-Fueled`
+
+`Crash Bandicoot Nitro-Fueled Racing`
+
+### Q16
+
+![ảnh](https://github.com/LDV-SpaceK/Cyberdefenders.org/assets/151914246/c78718da-135b-4f6f-9c7e-1ed78bb57c43)
+
+* `/private/var/mobile/Library/Preferences/com.apple.MobileSMS.plist`: SMS, iMessage and FaceTime
+
+![ảnh](https://github.com/LDV-SpaceK/Cyberdefenders.org/assets/151914246/081d4f98-128c-489d-b210-bf203621ff25)
+
+`com.apple.MobileSMS`
+
+### Q17
+
+![ảnh](https://github.com/LDV-SpaceK/Cyberdefenders.org/assets/151914246/f4b6cbef-389e-4a30-8af3-60a044bdcea2)
+
+* in directory `\private\var\mobile\Library\Calendar\`, file Calendar.sqlitedb store the reminder of user
+
+![ảnh](https://github.com/LDV-SpaceK/Cyberdefenders.org/assets/151914246/9f02219c-bab4-43b5-be79-fd7cfd4c0b7a)
+
+* in CalendarItem table , there are two reminder, `Get milk` and `Go to bed BEFORE 5 am`
+
+`milk`
+
+
+
 
 
 
